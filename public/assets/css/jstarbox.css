@@ -1,0 +1,67 @@
+.positioner {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.starbox .colorbar,
+.starbox .ghost {
+	z-index: 0;
+	position: absolute;
+	max-width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.starbox .stars {
+	display: inline-block;
+}
+
+.starbox .stars .star_holder {
+	position: relative;
+	z-index: 1;
+}
+
+.starbox .stars .star_holder .star {
+	display: inline-block;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
+}
+
+/* Override with your own image and size… */
+.starbox .stars .star_holder .star {
+	background-image: url('../images/5-small.png');
+	width: 18px;
+	height: 18px;
+}
+.rating_star,.rating_star2 {
+	vertical-align: middle;
+	height: 32px;
+	display: inline-table;
+	margin-top:10px;
+}
+.rating_star .star {
+	background-color: #EF5F21;
+	background-image: url('../images/5-small.png');
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+.rating_star2 .star {
+	background-color: #EF5F21;
+	background-image: url('../images/5-small2.png');
+	width: 18px;
+	display: inline-block;
+	height: 18px;
+}
+
+/* Override with your own colours… */
+.starbox .stars { background: #cccccc; }
+.starbox .rated .stars { background: #dcdcdc; }
+.starbox .rated.hover .stars { background: #cccccc; }
+.starbox .colorbar { background: #EF5F21; }
+.starbox .hover .colorbar { background: #EF5F21; }
+.starbox .rated .colorbar { background: #EF5F21; }
+.starbox .rated.hover .colorbar { background: #EF5F21; }
+.starbox .ghost { background: #a1a1a1; }
